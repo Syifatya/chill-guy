@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<windows.h>
+#include<string.h>
+
+void clear() {
+    system("cls");
+}
+
+int main() {
+    clear();
+
+    char *chill[] = {
+        "           /)_____/)\n",
+        "          /  _  _  |\n",
+        "       __/   O  O  |\n",
+        "      /            |\n",
+        "     (___    __/   |\n",
+        "         [_________|\n",
+        "        /|       | |\n",
+        "       |_|       |_|\n",
+        "       [_|_______|_/\n",
+        "         |         |\n",
+        "         |    |    |\n",
+        "        _|____|____|\n",
+        "       /_____/_____|\n"
+    };
+
+    char guy[14][30] = {"\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t"};
+    char guyy[15][30] = {"\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t"};
+    char guyyy[15][50] = {"\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t","\t"};
+    char guyyyy[15][50] = {"  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  ","  "};
+
+    int i, a, b, c, d;
+
+    for (i = 0; i < 13; i++) {
+        Sleep(200);
+        printf("%s", chill[i]);
+    }
+    Sleep(3000);  
+    clear();
+    for (a = 0; a < 13; a++) {
+        strcat(guy[a], chill[a]);
+        printf("%s", guy[a]);
+    }
+
+    Sleep(70); 
+    clear();
+    for (b = 0; b < 13; b++) {
+        strcat(guyy[b], guy[b]);
+        printf("%s", guyy[b]);
+    }  
+
+    Sleep(70); 
+    clear();
+    for (c = 0; c < 13; c++) {
+        strcat(guyyy[c], guyy[c]);
+        printf("%s", guyyy[c]);
+    }
+
+    Sleep(70); 
+    clear();
+    for (d = 0; d < 13; d++) {
+        strcat(guyyyy[d], guyyy[d]);
+        printf("%s", guyyyy[d]);
+    }
+    Sleep (1000);
+    printf("\n                             C H I L L  G U Y\n \n \n");
+    
+    return 0;
+}
